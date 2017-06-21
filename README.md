@@ -19,9 +19,31 @@ $ npm install vue-ajax-intercept --save
 
 ```javascript
 <script>
+import ajaxIntercept from 'vue-ajax-intercept'
 
+export default {
+  name: 'app',
+  methods: {
+    start(status){
+      console.log(status); //XMLHttpRequest object
+    },
+    finish(status){
+      console.log(status); //XMLHttpRequest object
+    }
+  },
+  components: { ajaxIntercept }
+}
 
 </script>
+```
+
+``` html
+<template>
+  <div>
+    <ajax-intercept @start="start" @finish="finish" ></ajax-intercept>  
+	<router-view></router-view>
+  </div>
+</template>
 ```
 
 # License
