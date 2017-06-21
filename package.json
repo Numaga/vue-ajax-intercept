@@ -1,6 +1,6 @@
 {
   "name": "vue-ajax-intercept",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny vueJS plugin to intercept every ajax request",
   "main": "./dist/vue-ajax-intercept.min.js",
   "files": [
